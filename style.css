@@ -1,0 +1,136 @@
+:root{
+    --blanco: #fff;
+    --grisClaro: #DCDCDD;
+    --plata: #C5C3C6;
+    --azul: #1985A1;
+    --grisOscuro: #46494C;
+    --secundario: #4c5c68;
+    --rojo: #D52941 ;
+}
+/* -----Globales----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    min-height: 100%;
+    position: relative;
+}
+body{
+    font-size: 1rem;
+    font-family:Helvetica, sans-serif;
+    margin-bottom: 3rem;
+}
+
+
+/* header */
+.header{
+    padding: .5rem;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--azul);
+}
+.titulo{
+
+    color: var(--blanco);
+    text-align: center;
+}
+/* seccion principal */
+.principal{
+    max-height: 100%;
+    width: auto;
+    margin: 1rem;
+    background-color: var(--grisClaro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* formulario */
+.principalTitulo{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.form-mensaje{
+    resize: none;
+    padding: 5rem 1rem;
+}
+.formulario{
+    padding-bottom: 1rem;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    text-align: center;
+    font-size: 1.2rem ;
+    font-weight: 700;
+    color: var(--azul);
+    padding: .5rem;
+}
+input.text {
+    /* background: silver; */
+    border: 2px solid var(--grisOscuro);
+    border-radius: 5px;
+    color: var(--grisOscuro);
+    font-size: 1rem;
+    padding: 5px;
+}
+.botonAgregar {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid var(--grisOscuro);
+    border-radius: 8px ;
+}
+.botonAgregar:hover {
+    border:  1px solid var(--blanco);
+    color: var(--blanco);
+    background: var(--azul);
+}
+
+/* Seccion para mostar datos */
+.tituloMostrar{
+    color: var(--azul);
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+.cajaDatos{
+    margin: 1rem;
+    background-color: var(--plata);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .5rem 0;
+}
+.cajaDatos div {
+    font-weight: 7+00;
+    margin: .25rem 0;
+    background-color: #fff;
+}
+.cajaDatos input{
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid var(--grisOscuro);
+    border-radius: 8px ;
+}
+
+
+/* footer */
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--grisOscuro);
+}
+.footerText{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--blanco);
+}
+
